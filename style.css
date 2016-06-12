@@ -1,0 +1,165 @@
+
+.canvas{
+    width: 800px;
+    min-height: 580px;
+    background-image:url('wrld1.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    background-position: bottom;
+    top: 30px;
+}
+.ship{
+    width: 150px;
+    position: absolute;
+    bottom: 25px;
+    
+    animation-name: ship1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+}
+.clouds{
+    width: 400px;
+    position: absolute;
+    right: 0;
+    
+    animation-name: clouds1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.water{
+    position: absolute;
+    bottom: -30px;
+    left:-10px;
+    animation-name: water1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.comet{
+    width: 50px;
+    position: absolute;
+    display: block;
+    top: -200px;
+    animation-name: comet1;
+    animation-duration: 2s;
+    z-index: -1000;
+}
+.sun{
+    width: 70px;
+    position: absolute;
+    bottom: 0px;
+    z-index: -100;
+    bottom: 100000px;
+    
+    animation-name: sun1;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ship1 {
+    0% {
+        left: 0;
+    }
+    50%{
+        left: 80%;
+    }
+    100% {
+       left: 0;
+    }
+}
+@keyframes sun1{
+    0%{
+        left:0;
+        bottom:0;
+    }
+    20%{
+        bottom:40%;
+        left: 20%;
+    }
+    40%{
+        bottom:80%;
+        left: 40%;
+    }
+    50%{
+        bottom:100%;
+        left: 50%;
+    }
+    60%{
+        bottom:80%;
+        left: 60%;
+    }
+    80%{
+         bottom:40%;
+         left: 80%;
+    }
+    100%{
+        left:90%;
+        bottom:0;
+    }
+}
+@keyframes clouds1{
+    0%{
+        right: 0;
+    }
+    50%{
+        right: 400px;
+    }
+    100%{
+         right: 0;
+    }
+}
+@keyframes comet1{
+    0%{
+        top: -100px;
+        left:0;    
+    }
+  
+    100%{
+        top: 300px;
+        left: 300px;
+    }
+}
+.bg{
+    background: black;
+    
+    animation-name: bg1;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes bg1{
+    0%{
+        background: black;
+    }
+    50%{
+        background: #00ADFF;
+    }
+    100%{
+        background: black;
+    }
+}
+    
+   @keyframes water1{
+       0%{
+           left:-10px;
+       }
+       50%{
+           left:10px;
+       100%{
+           left:-10px;
+       }
+   }
+}
+       h1{
+
+           width: 500px;
+           margin: 0 auto;
+           color:floralwhite;
+       }      
+    
